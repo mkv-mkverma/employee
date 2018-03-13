@@ -1,0 +1,22 @@
+{
+  "generator-fountain-angular1": {
+    "version": "1.0.0",
+    "props": {
+      "resolved": "C:\\Users\\test\\AppData\\Roaming\\npm\\node_modules\\generator-fountain-angular1\\generators\\app\\index.js",
+      "namespace": "fountain-angular1:app",
+      "_": [],
+      "framework": "angular1",
+      "modules": "inject",
+      "js": "js",
+      "css": "css",
+      "ci": [
+        "travis",
+        "circleci",
+        "jenkins",
+        "wercker"
+      ],
+      "sample": "hello",
+      "router": "uirouter"
+    }
+  }
+}
