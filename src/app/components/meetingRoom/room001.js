@@ -6,9 +6,18 @@ function room001Controller(Meetingroom) {
 
   Meetingroom.getPokimonData().then(function(data){
     vm.userdata = data;
-    console.log(vm.userdata);
-    console.log(vm.userdata.name);
-    console.log(vm.userdata.weight);
+    console.log(vm.userdata.data);
+    console.log(vm.userdata.data.name);
+    console.log(vm.userdata.data.weight);
+  }).catch(function(errorResponse) {
+    console.log('oopsie', errorResponse);
+  });
+
+  Meetingroom.getSpringRestData().then(function(response){
+    vm.greeting = response.data;
+    console.log(vm.greeting);
+    console.log(vm.greeting.content);
+    console.log(vm.greeting.id);
   }).catch(function(errorResponse) {
     console.log('oopsie', errorResponse);
   });

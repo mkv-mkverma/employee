@@ -7,6 +7,10 @@ function Meetingroom($http) {
   this.getPokimonData = function() {
     return $http.get('http://pokeapi.co/api/v2/pokemon/1/')
  }
+
+  this.getSpringRestData = function() {
+    return $http.get('http://rest-service.guides.spring.io/greeting')
+ }
 }
 
 // Meetingroom.prototype.getData = function () {
